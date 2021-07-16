@@ -1,0 +1,28 @@
+body{
+  background-color: powderblue;
+}
+div, section{
+  border: 2px solid green;
+}
+p{
+  color:orange;
+}
+.p1{
+  font-size:30px;
+  color:purple;
+}
+.p2{
+  font-size:15px;
+  color:green;
+}
+section .p1{
+  color:blue;
+}
+section .p2{
+  color:grey;
+}
+
+.s1
+{
+  border: 2px solid red;
+}
