@@ -1,0 +1,53 @@
+body{
+  height: 100vh;
+}
+
+header{
+  text-align: center;
+}
+header>h1{
+  font-size: 30px;
+}
+.block{
+  width:1400px;
+  height:300px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.sub{
+  float: left;
+  width:32%;
+  height:100%;
+  margin:2px;
+  border: 2px solid black;
+}
+.sub>img{
+  height: 100%;
+  width:100%;
+}
+.subBox{
+  border: 5px solid #5a9fe8;
+  height: 97.5%;
+  background-color: #e6e8d8;
+  text-align: center;
+  font-size: 22px;
+}
+.text{
+  margin-top: 40px;
+}
+nav>ul>li{
+  display: inline;
+  font-size: 20px;
+  margin: 20px;
+}
+nav>ul{
+  text-align: center;
+}
+h4{
+  margin-top: 40px;
+  text-align: center;
+}
+a{
+  color:blue;
+}

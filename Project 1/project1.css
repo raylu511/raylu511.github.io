@@ -1,0 +1,148 @@
+body{
+  height:100vh;
+}
+.topImages{
+  width:100%;
+  height:100px;
+}
+.subImage1{
+  float: left;
+  width:10%;
+  height:100%;
+}
+.subImage2{
+  float: right;
+  width:10%;
+  height:100%;
+}
+.subImages>img{
+  width: 100%;
+  height: 100%;
+}
+.topContent{
+  margin:auto;
+  width:1550px;
+  height:600px;
+}
+.heading{
+  width:98%;
+  height:20%;
+  margin:5px;
+}
+.mainText{
+  width:98%;
+  height:75%;
+  border: 2px solid black;
+  margin-left: 5px;
+  background-color: pink;
+}
+.heading>h1{
+  text-align: center;
+  font-size: 25px;
+}
+.heading>p{
+  font-size: 12px;
+}
+.mainText>h2{
+  margin-left: 5px;
+  font-size: 15px;
+  color:white;
+}
+.mainText>.sub{
+  width: 98%;
+  height:40%;
+  margin: 20px;
+  display: flex;
+}
+figure>a>img{
+  width:50%;
+  height:100%;
+  border: 2px solid purple;
+  margin-left: 120px;
+}
+.sub>p {
+  color:white;
+  font-size: 18px;
+  width:4000px;
+  margin-right: 100px;
+}
+.upcoming{
+  margin: 20px;
+  padding-bottom: 20px;
+
+}
+.newsfeed{
+  height: 300px;
+  width: 100%;
+  padding: 0;
+}
+.news1{
+  margin: 5px;
+  height: 20%;
+  width: 98%;
+}
+.news2{
+  margin: 5px;
+  height:50%;
+  width: 98%;
+  padding-bottom: 0;
+}
+.news>h3{
+  font-size: 15px;
+  font-family: URW Chancery L, cursive;
+  margin: 0;
+}
+.news>p{
+  margin: 0;
+  padding-left: 60px;
+}
+.tripCost{
+  margin: 10px;
+  padding-bottom: 20px;
+}
+table
+{
+  border: 2px solid black;
+}
+th{
+  background-color: lightgreen;
+}
+.contact{
+  width:100%;
+  height:300px;
+}
+.contact>.sub{
+  width:100%;
+  height:20%;
+  margin: 10px;
+}
+.sub>img{
+  height:100%;
+  padding-left: 70px;
+}
+nav>ul>li{
+  display: inline;
+  font-size: 20px;
+  margin: 20px;
+}
+nav>ul{
+  text-align: center;
+}
+h4{
+  margin-top: 40px;
+  text-align: center;
+}
+a{
+  color:blue;
+}
+figcaption{
+  color:white;
+  text-align: center;
+  font-family: cursive;
+}
+.caption1{
+padding-right: 130px;
+}
+.caption2{
+  padding-right: 90px;
+}
