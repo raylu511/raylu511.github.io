@@ -17,6 +17,7 @@
   position: relative;
   margin: auto;
 }
+
 /* Minute */
 .imgbox1{
   height:30%;
@@ -40,12 +41,23 @@
   animation-duration: 10s;
   transform-origin: center left ;
   animation-fill-mode: forwards;
-
 }
 img{
   width:100%;
   height:100%;
 }
+.imgbox3{
+  width:.1%;
+  height:15%;
+  border: 2px solid red;
+  position: absolute;
+  top: 33%;
+  left:50%;
+  animation-name: second;
+  animation-duration: 10s;
+  transform-origin: bottom center;
+}
+
 
 @keyframes minute{
   0%{top:20%;left:42.5%;}
@@ -55,4 +67,8 @@ img{
 @keyframes hour{
   0%{top:42%;left:50%;}
   100%{top:42%;left:50%; transform:rotate(30deg); }
+}
+@keyframes second {
+  0%{top:33%;left:50%;}
+  100%{transform: rotate(21600deg);}
 }
