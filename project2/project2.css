@@ -1,0 +1,361 @@
+body{
+  background-color: lightyellow;
+  overflow-x: hidden;
+}
+/* Top container */
+.container{
+  border: 1px solid white;
+  width:90%;
+  height:150px;
+  display: flex;
+  margin: auto;
+  overflow: auto;
+}
+.container>.imgbox{
+  border:1px solid #8eb53c;
+  border-radius: 10px;
+  width:20%;
+  height:98%;
+  margin: auto;
+}
+.container>.txtbox{
+  width:70%;
+  height:98%;
+  margin: auto;
+}
+.container>.imgbox>img{
+  width:100%;
+  height:100%;
+}
+.container>.txtbox>h1{
+  color: #8eb53c;
+}
+
+
+/* 2nd container */
+.container2{
+  width:98%;
+  height:600px;
+  margin: auto;
+}
+
+/* Slideshow */
+.container2>.frame{
+  height:10%;
+  width:90%;
+  overflow-x: hidden;
+  margin-left:5%;
+}
+
+.frame>.wrapper{
+  width:300%;
+  height:100%;
+  display:flex;
+  animation: slideshow 30s;
+  animation-iteration-count: infinite;
+}
+.wrapper>.slide{
+  width:100%;
+  height:100%;
+  text-align: center;
+  overflow: hidden;
+
+}
+.slide1{
+  background-color: #5e692d;
+  color:white;
+}
+.slide2{
+  background-color: #cfc46d;
+  color:black;
+}
+.slide3{
+  background-color: #8a7e30;
+  color:white;
+}
+
+@keyframes slideshow {
+  0%{margin-left: 0;}
+  25%{margin-left: -100%;}
+  50%{margin-left: -200%;}
+  75%{margin-left: -100%;}
+  100%{margin-left: 0;}
+}
+
+/* Img and txt */
+.container2>.bottombox{
+  height:85%;
+  width:90%;
+  border:1px solid white;;
+  background:linear-gradient(transparent, mistyrose), url("images/intro_img2.jpg");
+  background-size: 100% 100%;
+  margin: auto;
+}
+.bottombox>.txtbox{
+  border:5px solid white;
+  height:25%;
+  width:30%;
+  background-color: #bab9b1;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-left: 2%;
+  font-size: 16px;
+  overflow: auto;
+}
+
+/* 2x1 grid */
+.container3{
+  width:90%;
+  height:300px;
+  margin: auto;
+  display: flex;
+}
+.container3>.box{
+  width:35%;
+  height:100%;
+  margin: auto;
+}
+.container3>.box>.txtbox{
+  border:1px solid lime;
+  width:50%;
+  height:35%;
+  margin-left: 3%;
+  margin-top: 10%;
+  overflow: auto;
+}
+.container3>.box>.txtbox>p{
+  margin-left: 10%;
+  margin-top: 8%;
+  color: white;
+
+}
+.container3>.box1{
+  background:linear-gradient(transparent, mistyrose), url("images/intro_img1.jpg");
+  background-size: 100% 100%;
+}
+
+.container3>.box2{
+  color:#232124;
+  font-size: 15px;
+  background-color:#cfc46d ;
+  position: relative;
+}
+.container3>.box2>h2{
+  position: absolute;
+  top:3%;
+  left:3%;
+}
+.container3>.box2>p{
+  position: absolute;
+  top:20%;
+  left:3%;
+}
+
+/* Lotion images */
+.container4{
+  width:100%;
+  height:500px;
+}
+.container4>.header{
+  border-bottom: 2px solid #635b0e;
+  width:90%;
+  margin: auto;
+  color:#635b0e;
+}
+.container4>.frame{
+  width:90%;
+  height:80%;
+  margin: auto;
+  display:flex;
+}
+.container4>.frame>.box{
+  width:30%;
+  height:90%;
+  margin: auto;
+}
+.container4>.frame>.box>.imgbox{
+  width:40%;
+  height:50%;
+  margin: auto;
+}
+.container4>.frame>.box>.imgbox>img{
+  width:100%;
+  height:100%;
+}
+.container4>.frame>.box>.txtbox{
+  text-align: center;
+}
+.container4>.frame>.box>.txtbox>h5{
+  color:#8a7e30;
+}
+.container4>.frame>.box>.txtbox>a{
+  background-color: black;
+  padding:4%;
+  color:white;
+  text-decoration: none;
+  font-size: 10px;
+}
+.container4>.frame>.box>.txtbox>a:hover{
+  background-color: grey;
+  color:black;
+}
+/* Body Lotion Modal Window */
+.modalwindow{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0, 0 ,0 ,0.8);
+  pointer-events: none;
+  opacity: 0;
+}
+.modalwindow>.msgbox{
+  background-color: white;
+  width:40%;
+  height:60%;
+  margin: auto;
+  margin-top: 5%;
+}
+.modalwindow>.msgbox>.header{
+border-bottom: 2px solid grey;
+width:90%;
+height:10%;
+margin: auto;
+padding-bottom: 0;
+padding-top: 3%;
+}
+.modalwindow>.msgbox>.maincontent{
+  width:100%;
+  height:40%;
+  display: flex;
+  margin-top: 3%;
+}
+.modalwindow>.msgbox>.maincontent>.imgbox{
+  width:35%;
+  height:100%;
+  margin: auto;
+}
+.modalwindow>.msgbox>.maincontent>.imgbox>img{
+  width:100%;
+  height:100%;
+}
+.modalwindow>.msgbox>.maincontent>.txtbox{
+  width:55%;
+  height:100%;
+  margin: auto;
+  font-size: 13px;
+  overflow: auto;
+}
+.modalwindow>.msgbox>.footer{
+  background-color: grey;
+  height:26%;
+  overflow: auto;
+
+}
+.modalwindow>.msgbox>.footer>.content{
+  width:90%;
+  margin: auto;
+  top:1%;
+  position: relative;
+}
+.modalwindow>.msgbox>.footer>.content>p{
+  font-size: 14px;
+  padding-bottom: 2%;
+  border-bottom: 2px solid white;
+}
+.modalwindow>.msgbox>.footer>.content>a{
+  background-color: white;
+  color:black;
+  text-decoration: none;
+  padding:1%;
+}
+.modalwindow:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Gift set Modal Window */
+.modalwindow2>.msgbox>.maincontent{
+  margin-left: 4%;
+}
+.modalwindow2>.msgbox>.footer{
+  height:32%;
+}
+
+/* Footer */
+footer{
+  width:100%;
+  height:500px;
+  background-color: black;
+  margin-top: 3%;
+}
+footer>.top{
+  height:33%;
+  width:100%;
+  display: flex;
+}
+footer>.top>.txtbox{
+  height:100%;
+  width:25%;
+  text-align: center;
+  padding-top: 1%;
+}
+footer>.top>.txtbox>a{
+  color:white;
+  text-decoration: none;
+}
+
+
+
+footer>.middle{
+  height:33%;
+  width:90%;
+  margin: auto;
+  border-top: 2px solid white;
+  display:flex;
+}
+
+footer>.middle>.empty{
+  width:60%;
+  height:100%;
+}
+footer>.middle>.frame{
+  width:40%;
+  height:100%;
+}
+footer>.middle>.frame>.txtbox{
+  margin-top: 10%;
+  margin-left: 25%;
+  height:24%;
+  width:100%;
+  color:white;
+}
+
+footer>.middle>.frame>.imgcontainer{
+  height:50%;
+  width:100%;
+  display: flex;
+  margin-left: 20%;
+}
+footer>.middle>.frame>.imgcontainer>.imgbox{
+  width:8%;
+  height:50%;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+footer>.middle>.frame>.imgcontainer>.imgbox>a>img{
+  width:100%;
+  height:100%;
+}
+
+footer>.bottom{
+  height:33%;
+  width:100%;
+}
+footer>.bottom>.txtbox{
+  color:white;
+  text-align: center;
+  padding-top: 6%;
+  font-size: 12px;
+}
