@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="box"><p>Guess the Number Between 1 and 100</p></div>
+        <div class="box mid-box"><div class="text-box"><p>Guess my Number!</p></div></div>
+        <div class="box end-box"><div class="button-box"><input type="button" value="Play!" class="reset"></div></div>
+    </header>
+
+    <!-- Question mark/Number box -->
+    <div class="num-box"><h2><span class="question-text">?</span></h2></div>
+
+    <!-- Bottom Content -->
+    <div class="bottom-container">
+        <div class="col col-1">
+            <div class="row hint-box"><p class="hint-text">Let's start Guessing...</p></div>
+            <div class="row score-box">
+                <div class="score">
+                    <div class="img-box">🐖</div> 
+                    <div class="text-box">Score: <span class="score-text">10</span></div>
+                </div>
+                <div class="score">
+                    <div class="img-box">🥇</div> 
+                    <div class="text-box">HighScore:<span class="highscore-text">0</span></div>
+                </div> 
+            </div>
+        </div>
+        <div class="col col-2">
+            <div class="box">
+                <p>Guessing History</p>
+                <p class="history"></p>
+            </div>
+        </div>
+        <div class="col col-3">
+                <div class="number-box"><input type="text" value="" class="input-box" placeholder="0"></div>
+                <div class="submit-box"><input type="button" value="Check!" class="check-box"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Project 3 by Ray Lu</p>
+    </footer>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
