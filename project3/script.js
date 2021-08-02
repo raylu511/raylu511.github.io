@@ -19,16 +19,17 @@ function lose(scoreCounter)
     else{return true;}
 }
 
+// Query Selectors
 let randomNumber = generateNumber();
 let score = document.querySelector('.score-text'); 
 let scoreCounter = document.querySelector('.score-text').textContent;
 let highScore = document.querySelector('.highscore-text');
 const hintText = document.querySelector('.hint-text');
 let questionText = document.querySelector('.question-text');
-let wrongNumbers = [] ; 
 let guessingHistory = document.querySelector('.history');
 let checkBox = document.querySelector('.check-box');
 let inputBox = document.querySelector('.input-box');
+
 
 // Main Logic
 document.querySelector('.check-box').addEventListener('click', function (){
@@ -54,6 +55,12 @@ document.querySelector('.check-box').addEventListener('click', function (){
         //Generates New Number
         randomNumber = generateNumber();
     }
+
+    // Empty Input or NAN
+    else if(inputNumber=='' || !Number(inputNumber) || inputNumber>100 || inputNumber<1){
+        hintText.textContent = `Invalid input` ;  
+    }
+
     // If number matches
     else if(checkNum(inputNumber,randomNumber)){
 

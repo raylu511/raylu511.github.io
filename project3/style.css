@@ -76,19 +76,14 @@ h2 {
  }
  .bottom-container>.col>.score-box>.score{
     height:45%;
-    width:100%;
-    
+    width:100%;  
     display: flex;
     
  }
- .bottom-container>.col>.score-box>.score>.img-box{
-     height:100%;
-     width:20%;
-     margin-left: auto;
- }
+
  .bottom-container>.col>.score-box>.score>.text-box{
      height:100%;
-     width:60%;
+     width:100%;
      margin-right: 0;
  }
  img{
@@ -148,4 +143,17 @@ input{
 footer{
     text-align: center;
     color:white;
+}
+.score>.text-box{
+    margin-left: auto;
+}
+.white-text{
+    color:white;
+}
+.bottom-container>.col>.score-box{
+    width:100%;
+}
+.bottom-container>.col>.hint-box
+{
+    width:100%;
 }
